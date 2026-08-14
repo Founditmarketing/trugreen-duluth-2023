@@ -1,1 +1,40 @@
-{"cleanUrls":true,"trailingSlash":false,"headers":[{"source":"/(.*)","headers":[{"key":"Cache-Control","value":"public, max-age=0, must-revalidate"}]},{"source":"/(.*)\\.css","headers":[{"key":"Cache-Control","value":"public, max-age=60"}]},{"source":"/(.*)\\.(js|jpg|jpeg|png|gif|webp|svg|woff|woff2|ttf|eot|ico|mp4)","headers":[{"key":"Cache-Control","value":"public, max-age=3600, stale-while-revalidate=86400"}]}]}
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=60"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(js|jpg|jpeg|png|gif|webp|svg|woff|woff2|ttf|eot|ico|mp4)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/analytics",
+      "destination": "https://www.founditos.com/client-portal/15f4a296-7140-4c9c-9088-8657ec0baeb1",
+      "permanent": false
+    }
+  ]
+}
